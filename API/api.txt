@@ -1,0 +1,26 @@
+# API
+
+# what is an API?
+#an API is application programmable interface.
+
+#if any custom app wants the data from an app.
+#it sends an http request to the app, then app sends a response in json format.
+#these http request can be of any from CRUD operations. 
+#basic CRUD operations are listed below :-
+
+#POST - create
+#GET - read
+#PUT - update (replace)
+#PATCH - update (modify)
+#DELETE - delete
+
+# what does API do?
+#an API is the mediator which works between two homogeneous devices or two heterogeneous devices.
+#it connects both devices and help them to exchange data between them.
+#it bridges the gap between separate devices and establishes a connection.
+
+# what is the role of API in data science?
+#in data science, the majority of devices or services works using multiple apis
+#to work seamlessly and get the job done in data science apis played a major role.
+
+# learning the basic API in python is using Flask.

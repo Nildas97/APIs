@@ -1,0 +1,16 @@
+#1. in fastapi the order of the function is also matter.
+#because the fastapi only searches for two main things:
+#a. the http request method i.e. get or post
+#b. the url assigned.
+# rest it won't matter if the 1st function is in first place or in last place.
+
+
+#CRUD 
+#action     request     request_style
+
+#create     post        @app.post("/posts") (to send a data)
+#read       get         @app.get("/posts/{id}") (to retrieve a specific data)
+#read       get         @app.get("/posts") (to retrieve all data)
+#update     put         @app.put("/posts/{id}") (to update all data)
+#update     patch       @app.patch("/posts/{id}") (to update a specific data)
+#delete     delete      @app.delete("/posts/{id}") (to delete a data) 

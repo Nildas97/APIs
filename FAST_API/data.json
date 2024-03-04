@@ -1,0 +1,62 @@
+{ "results" : [
+    {
+    "id" : 123456788,
+    "title" : "Cool Sweatshirt",
+    "variants" : [
+    {
+        "name" : "small",
+        "sku" : "BDC4564",
+        "available" : "False",
+        "price" : "35"
+    },
+    {
+        "name" : "medium",
+        "sku" : "BDC4565",
+        "available" : "False",
+        "price" : 35
+    },
+    {
+        "name" : "large",
+        "sku" : "BDC4566",
+        "available" : "False",
+        "price" : "35"
+    },
+    {
+        "name" : "Xlarge",
+        "sku" : "BDC4567",
+        "available" : "False",
+        "price" : 40
+    }
+]
+},  
+    {
+    "id" : 123456789,
+    "title" : "Bad Sweatshirt",
+    "variants" : [
+    {
+        "name" : "small",
+        "sku" : "BDC4574",
+        "available" : "False",
+        "price" : 35
+    },
+    {
+        "name" : "medium",
+        "sku" : "BDC4575",
+        "available" : "False",
+        "price" : "35"
+    },
+    {
+        "name" : "large",
+        "sku" : "BDC4576",
+        "available" : "False",
+        "price" : "35"
+    },
+    {
+        "name" : "Xlarge",
+        "sku" : "BDC4577",
+        "available" : "False",
+        "price" : 40
+    }
+]
+}
+]}   

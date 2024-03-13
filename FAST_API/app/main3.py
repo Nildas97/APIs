@@ -20,7 +20,7 @@ while True:
             host='localhost',
             database='fastapi',
             user='postgres',
-            password='admin123',
+            password='******',
             cursor_factory=RealDictCursor)
         cursor = conn.cursor()
         print("Database connection successfull")

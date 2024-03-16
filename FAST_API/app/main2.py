@@ -7,7 +7,19 @@ from psycopg2.extras import RealDictCursor
 import time
 from app.database import engine
 from . import models
+from dotenv import load_dotenv
+import os
 
+
+
+# getting current root directory
+ROOT_DIR = os.getcwd()
+
+# getting the .env folder path
+ENV_FILE_PATH = os.path.join(ROOT_DIR, '.env')
+
+# loading the .env file
+load_dotenv(dotenv_path=ENV_FILE_PATH)
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -29,8 +41,8 @@ while True:
         conn = psycopg2.connect(
             host='localhost',
             database='fastapi',
-            user='postgres',
-            password='admin123',
+            user=os.getenv('USERNAME'),
+            password=os.getenv('PASSWORD'),
             cursor_factory=RealDictCursor)
         cursor = conn.cursor()
         print("Database connection successfull")

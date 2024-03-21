@@ -8,14 +8,9 @@ import os
 app = Flask(__name__)
 
 
-# getting current root directory
-ROOT_DIR = os.getcwd()
-
-# getting the .env folder path
-ENV_FILE_PATH = os.path.join(ROOT_DIR, '.env')
-
 # loading the .env file
-load_dotenv(dotenv_path=ENV_FILE_PATH)
+load_dotenv(dotenv_path='D:\Data Science\Data Science Portal\data science\APIs\.env')
+
 
 mydb = conn.connect(
     host="localhost",
@@ -29,7 +24,7 @@ cursor.execute("create table if not exists taskdb.tasktable (name varchar(30), n
 
 # CREATE
 @app.route('/insert', methods=['POST'])
-def insert(debug=True):
+def insert():
     if request.method=="POST":
         name = request.json['name']
         number = request.json['number']
@@ -67,4 +62,4 @@ def delete():
 
     
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
